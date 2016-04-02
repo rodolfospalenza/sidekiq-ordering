@@ -5,3 +5,4 @@
 
 :queues:
   - [default, 5]
+  - [gush, 6]
