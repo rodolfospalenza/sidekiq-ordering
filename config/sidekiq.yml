@@ -1,0 +1,7 @@
+# sidekiq -C config/sidekiq.yml
+
+:verbose: true
+:concurrency: 45
+
+:queues:
+  - [default, 5]
