@@ -1,6 +1,7 @@
-class UpdateJob < ActiveJob::Base
-  queue_as :default
+class UpdateJob
+  include Sidekiq::Worker
 
-  def perform
+  def perform(time)
+    puts "UpdateJob - #{time}"
   end
 end
